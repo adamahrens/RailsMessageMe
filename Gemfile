@@ -5,7 +5,9 @@ ruby '2.5.3'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'coffee-rails', '~> 4.2'
+gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'jbuilder', '~> 2.5'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'meta_request', '~> 0.7.2'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.3'
