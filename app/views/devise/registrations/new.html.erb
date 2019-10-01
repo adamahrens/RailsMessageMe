@@ -11,6 +11,14 @@
           <%= f.label :email %><br/>
           <div class='ui left icon input'>
             <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+            <i class="envelope icon"></i>
+          </div>
+        </div>
+
+        <div class="field">
+          <%= f.label :username %><br/>
+          <div class='ui left icon input'>
+            <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
             <i class="user icon"></i>
           </div>
         </div>

@@ -154,6 +154,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    rb-readline (0.5.5)
     regexp_parser (1.6.0)
     responders (3.0.0)
       actionpack (>= 5.0)
@@ -227,6 +228,7 @@ DEPENDENCIES
   meta_request (~> 0.7.2)
   puma (~> 3.11)
   rails (~> 5.2.3)
+  rb-readline (~> 0.5.5)
   sass-rails (~> 5.0)
   selenium-webdriver
   semantic-ui-sass (~> 2.4, >= 2.4.2.0)
