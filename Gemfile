@@ -28,6 +28,7 @@ gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'hirb', '~> 0.7.3'
   gem 'rb-readline', '~> 0.5.5'
 end
 

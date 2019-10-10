@@ -1,0 +1,12 @@
+<div class="ui form">
+  <%= form_with model: @message, local: true do |form| %>
+    <div class="fields">
+      <div class="field thirteen wide column">
+        <%= form.text_field :body, placeholder: 'Send Message' %>
+      </div>
+      <div class="field three wide column">
+        <%= form.submit 'Submit', class: 'ui button blue' %>
+      </div>
+    </div>
+  <% end %>
+</div>

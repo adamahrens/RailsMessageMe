@@ -20,4 +20,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :username, presence: true, length: { minimum: 5 }, uniqueness: true
+
+  has_many :messages, dependent: :destroy
 end

@@ -10,6 +10,7 @@
 #                           PUT    /chatrooms/:id(.:format)                                                                 chatrooms#update
 #                           DELETE /chatrooms/:id(.:format)                                                                 chatrooms#destroy
 #                      user GET    /users/:id(.:format)                                                                     users#show
+#                  messages POST   /messages(.:format)                                                                      messages#create
 #          new_user_session GET    /users/sign_in(.:format)                                                                 devise/sessions#new
 #              user_session POST   /users/sign_in(.:format)                                                                 devise/sessions#create
 #      destroy_user_session DELETE /users/sign_out(.:format)                                                                devise/sessions#destroy
@@ -37,6 +38,7 @@
 Rails.application.routes.draw do
   resources :chatrooms
   resources :users, only: %i[show]
+  resources :messages, only: %i[create]
 
   devise_for :users
   devise_scope :user do
