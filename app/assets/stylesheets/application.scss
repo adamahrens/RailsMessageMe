@@ -7,3 +7,9 @@
 .box {
   min-height: 500px;
 }
+
+.feed {
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+}

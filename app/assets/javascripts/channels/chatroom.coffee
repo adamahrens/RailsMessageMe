@@ -12,3 +12,9 @@ App.chatroom = App.cable.subscriptions.create "ChatroomChannel",
     console.log('Received chatroom data')
     # Append the rendered partial
     $('.feed').append(data)
+
+    # Clear input
+    $('#message_body').val('')
+
+    # Scroll to bottom
+    $('.feed').scrollTop($('.feed')[0].scrollHeight)
