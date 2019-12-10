@@ -5,12 +5,13 @@ class MessagesController < ApplicationController
   def create
     message = current_user.messages.build(message_params)
     if message.save
-      flash[:notice] = 'Message saved'
+      logger.debug 'Message saved'
+      partial = render(partial: 'messages/message', object: message)
+      ActionCable.server.broadcast('chatroom_channel', partial)
     else
       flash[:alert] = 'Message could not be saved'
+      redirect_to root_path
     end
-
-    redirect_to root_path
   end
 
   private

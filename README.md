@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+`rails g channel Chatroom`
+
+`Add to routes.rb`
+`mount ActionCable.server => '/cable'`
+
+`Need remote form`
+`<%= form_with model: @message, remote: true do |form| %>`
